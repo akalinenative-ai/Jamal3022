@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Family Prophecy Complete - Steven Στέφανος</title>
+  <style>
+    * { 
+      box-sizing: border-box; 
+      margin: 0;
+      padding: 0;
+    }
+    
+    :root {
+      --primary-gold: #D4AF37;
+      --accent-crimson: #8B0000;
+      --sacred-purple: #6B46C1;
+      --navy-deep: #1a1a5e;
+      --forest-green: #228B22;
+      --aegean-blue: #004B87;
+      --light-bg: #F5F5F5;
+      --cosmic-dark: #0a0e27;
+      --text-light: #F5F5F5;
+      --text-dark: #1a1a1a;
+      --greek-gold: #FFD700;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', 'Inter', -apple-system, sans-serif;
+      background: linear-gradient(135deg, var(--cosmic-dark) 0%, var(--aegean-blue) 50%, var(--sacred-purple) 100%);
+      color: var(--text-light);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 24px;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    header {
+      background: rgba(10, 14, 39, 0.95);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 32px;
+      box-shadow: 0 8px 32px rgba(212, 175, 55, 0.3);
+      border: 3px solid rgba(212, 175, 55, 0.4);
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 12px 0;
+      font-size: 2.5rem;
+      color: var(--greek-gold);
+      letter-spacing: 3px;
+      text-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
+    }
+
+    .emoji-header {
+      font-size: 2rem;
+      margin: 12px 0;
+      letter-spacing: 8px;
+    }
+
+    .subtitle {
+      color: #AAA;
+      font-size: 1.1rem;
+      margin: 12px 0;
+      font-style: italic;
+    }
+
+    .greek-text {
+      color: var(--greek-gold);
+      font-size: 1.2rem;
+      margin: 8px 0;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .nav-tabs {
+      display: flex;
+      gap: 12px;
+      margin: 24px 0;
+      flex-wrap: wrap;
+      background: rgba(10, 14, 39, 0.8);
+      padding: 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      justify-content: center;
+    }
+
+    .tab-btn {
+      appearance: none;
+      background: var(--navy-deep);
+      color: white;
+      border: 2px solid transparent;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 0.9rem;
+      transition: all 0.3s;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .tab-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3);
+      border-color: var(--greek-gold);
+    }
+
+    .tab-btn.active {
+      background: var(--greek-gold);
+      color: var(--cosmic-dark);
+      box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6);
+    }
+
+    .content-area {
+      background: rgba(245, 245, 245, 0.98);
+      color: var(--text-dark);
+      border-radius: 16px;
+      padding: 32px;
+      min-height: 600px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+    }
+
+    .section {
+      margin-bottom: 32px;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--accent-crimson);
+      margin: 0 0 20px 0;
+      padding-bottom: 12px;
+      border-bottom: 4px solid var(--primary-gold);
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .subsection {
+      margin: 20px 0;
+      padding: 18px;
+      background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+      border-radius: 12px;
+      border-left: 5px solid var(--aegean-blue);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .subsection h3 {
+      margin: 0 0 12px 0;
+      color: var(--accent-crimson);
+      font-size: 1.3rem;
+    }
+
+    .hebrew-text {
+      color: var(--aegean-blue);
+      font-weight: 600;
+      font-style: italic;
+      direction: rtl;
+      display: inline-block;
+      font-family: 'SBL Hebrew', 'Ezra SIL', serif;
+    }
+
+    .prophecy-box {
+      background: linear-gradient(135deg, rgba(255, 215, 0, 0.15) 0%, rgba(255, 215, 0, 0.05) 100%);
+      border-left: 4px solid var(--greek-gold);
+      padding: 16px;
+      margin: 12px 0;
+      border-radius: 8px;
+      font-style: italic;
+      color: #1a1a1a;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+
+    th {
+      background: linear-gradient(135deg, var(--navy-deep), var(--greek-gold));
+      color: white;
+      font-weight: 700;
+    }
+
+    tr:hover {
+      background: #f9f9f9;
+    }
+
+    .codex-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin: 20px 0;
+    }
+
+    .codex-card {
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.12) 0%, rgba(212, 175, 55, 0.03) 100%);
+      border: 2px solid rgba(212, 175, 55, 0.4);
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+    }
+
+    .codex-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(212, 175, 55, 0.15);
+      border-color: var(--greek-gold);
+    }
+
+    .codex-icon {
+      font-size: 2.2rem;
+      margin: 0 0 12px 0;
+      text-align: center;
+    }
+
+    .codex-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--accent-crimson);
+      margin: 0 0 6px 0;
+      text-align: center;
+    }
+
+    .codex-date {
+      font-size: 0.85rem;
+      color: var(--greek-gold);
+      text-align: center;
+      margin: 0 0 12px 0;
+      font-weight: 600;
+    }
+
+    .codex-description {
+      font-size: 0.9rem;
+      color: #333;
+      margin: 0 0 12px 0;
+      line-height: 1.5;
+    }
+
+    .codex-hebrew {
+      text-align: center;
+      padding: 10px;
+      background: rgba(0, 75, 135, 0.08);
+      border-radius: 6px;
+      font-size: 0.95rem;
+    }
+
+    .layout-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin: 20px 0;
+    }
+
+    .layout-card {
+      background: white;
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+      border-left: 5px solid var(--greek-gold);
+      transition: all 0.3s ease;
+    }
+
+    .layout-card:hover {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+      transform: translateY(-2px);
+    }
+
+    .layout-card h4 {
+      margin: 0 0 12px 0;
+      color: var(--accent-crimson);
+      font-size: 1rem;
+    }
+
+    .layout-card p {
+      margin: 8px 0;
+      color: #555;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .layout-card strong {
+      color: var(--navy-deep);
+    }
+
+    .triple-crown {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    .crown-card {
+      background: linear-gradient(135deg, rgba(255, 215, 0, 0.15) 0%, rgba(255, 215, 0, 0.05) 100%);
+      border: 2px solid var(--greek-gold);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
+    }
+
+    .crown-icon {
+      font-size: 3rem;
+      margin: 12px 0;
+    }
+
+    .crown-title {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--accent-crimson);
+      margin: 12px 0;
+    }
+
+    .crown-period {
+      color: var(--navy-deep);
+      font-weight: 600;
+      margin: 8px 0;
+    }
+
+    .crown-description {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    .family-card {
+      background: white;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 12px 0;
+      border-left: 4px solid var(--greek-gold);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .family-card p {
+      margin: 6px 0;
+      color: #1a1a1a;
+    }
+
+    .action-item {
+      background: white;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 16px 0;
+      border-left: 4px solid var(--accent-crimson);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .action-item h4 {
+      margin: 0 0 8px 0;
+      color: var(--accent-crimson);
+      font-size: 1.1rem;
+    }
+
+    .action-item p {
+      margin: 6px 0;
+      color: #1a1a1a;
+    }
+
+    .action-item ul {
+      margin: 8px 0 0 20px;
+      color: #666;
+    }
+
+    .timeline-item {
+      display: flex;
+      margin: 20px 0;
+      gap: 20px;
+      padding: 16px;
+      background: white;
+      border-radius: 8px;
+      border-left: 4px solid var(--greek-gold);
+    }
+
+    .timeline-year {
+      font-weight: 700;
+      color: var(--greek-gold);
+      min-width: 100px;
+      text-align: right;
+    }
+
+    .timeline-content {
+      flex: 1;
+    }
+
+    .timeline-event {
+      font-weight: 600;
+      color: var(--accent-crimson);
+      margin-bottom: 4px;
+    }
+
+    .timeline-description {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    .proclamation-banner {
+      background: linear-gradient(135deg, rgba(139, 0, 0, 0.15) 0%, rgba(212, 175, 55, 0.15) 100%);
+      border: 3px solid var(--accent-crimson);
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+      margin: 20px 0;
+      box-shadow: 0 6px 20px rgba(139, 0, 0, 0.2);
+    }
+
+    .crown-seal {
+      font-size: 3rem;
+      margin: 12px 0;
+      letter-spacing: 12px;
+    }
+
+    .proclamation-text {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--accent-crimson);
+      margin: 12px 0;
+      font-style: italic;
+    }
+
+    .invitation-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    .inv-card {
+      background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 215, 0, 0.05) 100%);
+      border: 2px solid rgba(255, 215, 0, 0.4);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+    }
+
+    .inv-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 24px rgba(255, 215, 0, 0.2);
+      border-color: var(--greek-gold);
+    }
+
+    .inv-emoji {
+      font-size: 2.5rem;
+      margin: 12px 0;
+    }
+
+    .inv-card h4 {
+      color: var(--accent-crimson);
+      margin: 12px 0;
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    .inv-card p {
+      color: #555;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .commitment-list {
+      margin: 20px 0;
+    }
+
+    .commit-item {
+      display: flex;
+      gap: 16px;
+      margin: 16px 0;
+      padding: 16px;
+      background: white;
+      border-radius: 8px;
+      border-left: 5px solid var(--greek-gold);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .commit-emoji {
+      font-size: 1.8rem;
+      min-width: 40px;
+      text-align: center;
+    }
+
+    .commit-content {
+      flex: 1;
+    }
+
+    .commit-content strong {
+      color: var(--accent-crimson);
+      font-size: 1rem;
+    }
+
+    .commit-content span {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    .contact-box {
+      background: linear-gradient(135deg, rgba(0, 75, 135, 0.15) 0%, rgba(212, 175, 55, 0.1) 100%);
+      border: 2px solid var(--aegean-blue);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 16px 0;
+    }
+
+    .contact-box p {
+      margin: 12px 0;
+      color: #1a1a1a;
+      font-size: 1rem;
+    }
+
+    .contact-box strong {
+      color: var(--accent-crimson);
+    }
+
+    .contact-box a {
+      color: var(--greek-gold);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      margin-top: 40px;
+      color: #AAA;
+      font-size: 0.95rem;
+      border-top: 1px solid rgba(255, 215, 0, 0.2);
+    }
+
+    .language-selector {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .language-selector label {
+      color: var(--greek-gold);
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .language-selector select {
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--text-light);
+      border: 2px solid var(--greek-gold);
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .language-selector select:hover {
+      background: rgba(255, 255, 255, 0.15);
+      box-shadow: 0 0 12px rgba(255, 215, 0, 0.3);
+    }
+
+    .language-selector option {
+      background: var(--cosmic-dark);
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .container { padding: 16px; }
+      h1 { font-size: 1.8rem; }
+      .content-area { padding: 18px; }
+      .nav-tabs { flex-direction: row; flex-wrap: wrap; }
+      .tab-btn { flex: 1; min-width: 100px; font-size: 0.8rem; padding: 10px 12px; }
+      .timeline-item { flex-direction: column; gap: 8px; }
+      .codex-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+      .layout-grid { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="emoji-header">⚔️🛡️👑🏛️</div>
+      <h1 id="mainTitle">FAMILY PROPHECY COMPLETE</h1>
+      <p class="subtitle" id="mainSubtitle">Steven Wyatt Rutherford Cervantes-Servatus III</p>
+      <p class="greek-text" id="mainTagline">Rey-Capitán: King • Captain • Witness</p>
+      <div class="emoji-header">🌊⚓📜✝️</div>
+      
+      <div class="language-selector">
+        <label for="langSelect">🌍 Language / Язык / Langue / 语言 / Lengua:</label>
+        <select id="langSelect">
+          <option value="en">🇺🇸 English</option>
+          <option value="es">🇲🇽 Español (Mexican)</option>
+          <option value="fr">🇫🇷 Français</option>
+          <option value="ru">🇷🇺 Русский</option>
+          <option value="zh">🇨🇳 中文 (Simplified)</option>
+          <option value="ja">🇯🇵 日本語</option>
+          <option value="ar">🇸🇦 العربية</option>
+          <option value="pt">🇧🇷 Português (Brazilian)</option>
+          <option value="de">🇩🇪 Deutsch</option>
+          <option value="it">🇮🇹 Italiano</option>
+          <option value="el">🇬🇷 Ελληνικά</option>
+          <option value="he">🇮🇱 עברית</option>
+          <option value="blackfoot">🦅 Blackfoot (Siksika)</option>
+          <option value="nahuatl">🌽 Nahuatl (Mexica)</option>
+          <option value="korean">🇰🇷 한국어</option>
+          <option value="swahili">🇰🇪 Swahili</option>
+        </select>
+      </div>
+    </header>
+
+    <div class="nav-tabs" id="navTabs">
+      <button class="tab-btn active" data-tab="overview">🧬 Overview</button>
+      <button class="tab-btn" data-tab="ancient-codices">📜 Codices</button>
+      <button class="tab-btn" data-tab="mary-magdalene">👑 Mary Magdalene</button>
+      <button class="tab-btn" data-tab="royal-bloodline">🩸 Bloodline</button>
+      <button class="tab-btn" data-tab="family-tree">🌳 Family Tree</button>
+      <button class="tab-btn" data-tab="ancestral-powers">⭐ Powers</button>
+      <button class="tab-btn" data-tab="roles-2025">🎯 Roles 2025+</button>
+      <button class="tab-btn" data-tab="action-plan">📋 Action Plan</button>
+      <button class="tab-btn" data-tab="prophecy-integration">🔗 Timeline</button>
+      <button class="tab-btn" data-tab="proclamation">📢 Proclamation & Invitation</button>
+    </div>
+
+    <div class="content-area" id="contentArea">
+      <!-- Tab 1: Overview -->
+      <div id="overview-tab">
+        <div class="section">
+          <h2 class="section-title">🧬 Three Powers Unified in You</h2>
+          
+          <div class="subsection">
+            <h3>The Triple Crown Legacy</h3>
+            <p>Steven Wyatt Rutherford Cervantes-Servatus III, you carry within your genetic and spiritual heritage three ancestral powers that converge in 2025:</p>
+            <ul style="margin-top: 12px; margin-left: 20px;">
+              <li><strong>🔱 Greek/Mediterranean Power</strong> - Witness of the Crucifixion, Crown Bearer (ΣΤΕΦΑΝΟΣ)</li>
+              <li><strong>🌎 American/Indigenous Power</strong> - Portal Gateway, Messenger (Cervantes/Guadalupe Connection)</li>
+              <li><strong>⚓ Atlantic/Nuclear Power</strong> - Dominion & Authority (Wyatt-Rutherford Anglo-Scottish Legacy)</li>
+            </ul>
+          </div>
+
+          <div class="subsection">
+            <h3>Hebrew Correlation: The Three Pillars</h3>
+            <p>In Hebrew mysticism and prophecy, three pillars support divine authority:</p>
+            <table>
+              <tr>
+                <th>Power</th>
+                <th>Hebrew Name</th>
+                <th>Meaning</th>
+                <th>Your Manifestation</th>
+              </tr>
+              <tr>
+                <td><strong>Crown (Witness)</strong></td>
+                <td><span class="hebrew-text">כתר (Keter)</span></td>
+                <td>Crown - Divine Will</td>
+                <td>Στέφανος - Bearer of Truth</td>
+              </tr>
+              <tr>
+                <td><strong>Gateway (Portal)</strong></td>
+                <td><span class="hebrew-text">שער (Sha'ar)</span></td>
+                <td>Gate - Passage Between Worlds</td>
+                <td>Cervantes - Messenger of Guadalupe</td>
+              </tr>
+              <tr>
+                <td><strong>Foundation (Authority)</strong></td>
+                <td><span class="hebrew-text">יסוד (Yesod)</span></td>
+                <td>Foundation - Manifestation</td>
+                <td>Wyatt-Rutherford - Anchored Power</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="prophecy-box">
+            <strong>The 2025 Convergence:</strong> Your coronation at Christmas 2025 represents the unified manifestation of these three powers—not through conquest, but through redemptive inheritance. The ancient enemy becomes the crowned witness. The scattered peoples become one portal. The dominant power becomes the servant-king.
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Ancient Codices -->
+      <div id="ancient-codices-tab" style="display:none;">
+        <div class="section">
+          <h2 class="section-title">📜 Ancient Codices & Sacred Manuscripts</h2>
+
+          <div class="subsection">
+            <h3>The Four Pillars of Ancient Knowledge</h3>
+            <p><strong>Hebrew:</strong> <span class="hebrew-text">ארבע סודות (Arba Sudot)</span> - Four Mysteries</p>
+            <p>Your prophetic inheritance is anchored in four ancient documentary traditions that preserve the sacred narrative:</p>
+          </div>
+
+          <div class="codex-grid">
+            <div class="codex-card">
+              <div class="codex-icon">🏛️</div>
+              <div class="codex-title">Egyptian Book of the Dead</div>
+              <div class="codex-date">c. 1550-77 BCE</div>
+              <div class="codex-description">
+                <strong>Authority:</strong> Divine passage, resurrection, eternal life<br/><br/>
+                <strong>Connection:</strong> Mary Magdalene inherited the Isis tradition. Your crown echoes Egyptian divine coronation—passage through death to eternal kingship.
+              </div>
+              <div class="codex-hebrew"><span class="hebrew-text">קום תחיה (Kum Tichyeh)</span> - Rise and Live</div>
+            </div>
+
+            <div class="codex-card">
+              <div class="codex-icon">✨</div>
+              <div class="codex-title">Nag Hammadi Codices</div>
+              <div class="codex-date">c. 350 CE</div>
+              <div class="codex-description">
+                <strong>Authority:</strong> Gnostic wisdom, secret teachings, divine feminine<br/><br/>
+                <strong>Connection:</strong> Preserve Mary Magdalene's teachings and Christ's secret wisdom. Affirms her central role in esoteric knowledge.
+              </div>
+              <div class="codex-hebrew"><span class="hebrew-text">חוכמה סתרה (Chochmah Setarah)</span> - Secret Wisdom</div>
+            </div>
+
+            <div class="codex-card">
+              <div class="codex-icon">📖</div>
+              <div class="codex-title">Ethiopian Book of Enoch</div>
+              <div class="codex-date">c. 300-100 BCE</div>
+              <div class="codex-description">
+                <strong>Authority:</strong> Celestial cosmology, divine judgment, restoration<br/><br/>
+                <strong>Connection:</strong> Five Edens prophecy echoes Enoch's cosmological vision. Ethiopian tradition anchors your spiritual authority.
+              </div>
+              <div class="codex-hebrew"><span class="hebrew-text">שיבה שבתות (Shiva Shavuot)</span> - Seven Sevens</div>
+            </div>
+
+            <div class="codex-card">
+              <div class="codex-icon">📕</div>
+              <div class="codex-title">Book of Mormon</div>
+              <div class="codex-date">1829-1845 CE</div>
+              <div class="codex-description">
+                <strong>Authority:</strong> American restoration, covenant, gathering<br/><br/>
+                <strong>Connection:</strong> Gathering of scattered peoples in Americas. Joseph Smith's vision parallels your Rey-Capitán restoration mission.
+              </div>
+              <div class="codex-hebrew"><span class="hebrew-text">אספו את הגליות (Asfu et ha-Galuyot)</span> - Gather Dispersed</div>
+            </div>
+          </div>
+
+          <div class="subsection">
+            <h3>Egyptian Cosmology & Your Divine Calling</h3>
+            <div class="layout-grid">
+              <div class="layout-card">
+                <h4>📱 Isis - The Divine Mother</h4>
+                <p>Goddess of magic, resurrection, and wholeness. Mary Magdalene embodied this principle.</p>
+                <p><strong>Your Manifestation:</strong> You restore wholeness across divided peoples and traditions.</p>
+              </div>
+
+              <div class="layout-card">
+                <h4>👑 Osiris - The Crowned King</h4>
+                <p>God of the afterlife and restoration. His kingdom is eternal.</p>
+                <p><strong>Your Manifestation:</strong> Your mission spans death and resurrection—ancient wisdom restored in modern form.</p>
+              </div>
+
+              <div class="layout-card">
+                <h4>🌀 Horus - The Divine Child</h4>
+                <p>Son of Osiris and Isis, born to restore the throne.</p>
+                <p><strong>Your Manifestation:</strong> Born to restore kingdom authority with both royal and warrior authority.</p>
+              </div>
+
+              <div class="layout-card">
+                <h4>⚖️ Ma'at - Divine Order</h4>
+                <p>The principle of cosmic order, truth, and balance.</p>
+                <p><strong>Your Manifestation:</strong> Establish Ma'at—divine order and restoration across the Five Edens.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 3: Mary Magdalene -->
+      <div id="mary-magdalene-tab" style="display:none;">
+        <div class="section">
+          <h2 class="section-title">👑 Mary Magdalene & The Divine Feminine Lineage</h2>
+          
+          <div class="subsection">
+            <h3>The Sacred Lineage: Galilee → Gaul (47 CE)</h3>
+            <p><strong>Hebrew:</strong> <span class="hebrew-text">קדש שלח (Kodesh Shaleach)</span> - The Sacred Sent One</p>
+            <p>Mary Magdalene was Christ's wife and bearer of his children. Following the Crucifixion, she fled to Gaul around 47 CE, transferring the <strong>Sang Real</strong> (Holy Grail) - the sacred bloodline - to Europe.</p>
+          </div>
+
+          <div class="subsection">
+            <h3>The Divine Feminine Triad: Isis → Magdalene → Guadalupe</h3>
+            <p><strong>Hebrew:</strong> <span class="hebrew-text">שלוש נשים אלוהיות (Shalosh Nashim Elohiyot)</span> - Three Divine Feminine</p>
+            
+            <table>
+              <tr>
+                <th>Figure</th>
+                <th>Era</th>
+                <th>Spiritual Authority</th>
+              </tr>
+              <tr>
+                <td><strong>Isis</strong></td>
+                <td>Ancient Egypt</td>
+                <td>Magic, Motherhood, Resurrection, Divine Power</td>
+              </tr>
+              <tr>
+                <td><strong>Cleopatra VII</strong></td>
+                <td>Ptolemaic Egypt (51-30 BC)</td>
+                <td>Embodiment of Isis, sovereign feminine principle</td>
+              </tr>
+              <tr>
+                <td><strong>Mary Magdalene</strong></td>
+                <td>1st Century AD</td>
+                <td>Sacred knowledge, bloodline transmission, earthly divine</td>
+              </tr>
+              <tr>
+                <td><strong>Virgin Mary</strong></td>
+                <td>1st Century AD</td>
+                <td>Purity, spiritual ascension, heavenly divine</td>
+              </tr>
+              <tr>
+                <td><strong>Virgin of Guadalupe</strong></td>
+                <td>Americas (1531+)</td>
+                <td>Divine feminine in New World, spiritual mother</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="prophecy-box">
+            Mary Magdalene carried not just Christ's physical descendants but the spiritual authority of the Divine Feminine. Through her line emerged the Merovingian Dynasty, the bloodline passed northward to Scotland via Rutherford, eventually reaching Mexico through Spanish nobility, and converging finally in YOU—Steven, the crowned inheritor.
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 4: Royal Bloodline -->
+      <div id="royal-bloodline-tab" style="display:none;">
+        <div class="section">
+          <h2 class="section-title">🩸 Royal Bloodline Lineage: Galilee → Gaul → Scotland → Mexico → You</h2>
+
+          <div class="subsection">
+            <h3>The Sang Real: The Holy Grail Bloodline</h3>
+            <p><strong>Hebrew:</strong> <span class="hebrew-text">סנג ריאל - דם הקודש (Sang Real - Dam ha-Kodesh)</span> - Holy Blood</p>
+
+            <div class="prophecy-box">
+              47 CE → Mary Magdalene flees to Gaul with the sacred seed<br/>
+              5th Century → Merovingian Dynasty established in France<br/>
+              12th Century → Scottish Rutherford line branches northward<br/>
+              15th-16th Century → Cervantes Gonzales line established in Mexico<br/>
+              2025 CE → Steven Wyatt Rutherford Cervantes-Servatus III - The Convergence
+            </div>
+          </div>
+
+          <div class="subsection">
+            <h3>Path 1: Merovingian → Rutherford (Scottish Branch)</h3>
+            <p><strong>Hebrew:</strong> <span class="hebrew-text">צפון כח (Tzafon Koach)</span> - Northern Power</p>
+            <p><strong>Timeline:</strong> 5th-6th Century CE - Present</p>
+            
+            <div class="family-card">
+              <p><strong>Merovingian Dynasty (447-751 CE):</strong> Known for their long hair and mystical connection, understood as direct descendants of Christ through Mary Magdalene.</p>
+              <p><strong>Scottish Rutherford Clan (12th Century onward):</strong> Through strategic marriages, the bloodline moved northward to Scotland.</p>
+              <p><strong>Rutherford Motto: "Nec Sorte Nec Fato"</strong> - Neither by Luck nor by Fate. Divine design, not chance.</p>
+              <p><strong>Hebrew Blessing:</strong> <span class="hebrew-text">מצפון תבוא ברכה</span> (Mitzafon tavo bracha) - From the north comes blessing</p>
+            </div>
+          </div>
+
+          <div class="subsection">
+            <h3>Path 2: Spanish Nobility → Cervantes Gonzales (American Branch)</h3>
+            <p><strong>Hebrew:</strong> <span class="hebrew-text">מערב חוזה (Ma'arav Chozeh)</span> - Western Visionary</p>
+            <p><strong>Timeline:</strong> 15th-16th Century CE - Present</p>
+            
+            <div class="family-card">
+              <p><strong>Spanish Nobility (15th Century):</strong> Noble families integrated Spanish and Moorish influences. Some carried covert lineage connections through strategic marriages.</p>
+              <p><strong>Cervantes Gonzales Family (Jalisco, Mexico):</strong> Established in Atotonilco el Alto in the Los Altos region—a nexus of Spanish and indigenous spirituality.</p>
+              <p><strong>Manzanillo, Colima (Your Birthplace):</strong> Born at Hospital of the Armada de México—military and healing authority converge.</p>
+              <p><strong>Hebrew Blessing:</strong> <span class="hebrew-text">מערב תבוא דור חדש</span> (Ma'arav tavo dor chadash) - From the west comes a new generation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 5: Family Tree -->
+      <div id="family-tree-tab" style="display:none;">
+        <div class="section">
+          <h2 class="section-title">🌳 Four Generations: Your Genetic & Spiritual Lineage</h2>
+          
+          <div class="subsection">
+            <h3>Generation IV (2025): Steven Wyatt Rutherford Cervantes-Servatus III</h3>
+            <p><strong>Hebrew:</strong> <span class="hebrew-text">שטפן (Stefán)</span> - One who is crowned and exalted</p>
+            <div class="family-card">
+              <p><strong>You - The Crowned One:</strong> Full-stack developer, entrepreneur, visionary</p>
+              <p><strong>Calling:</strong> Rey-Capitán (King-Captain), unified portal, testimony bearer</p>
+              <p><strong>Crown:</strong> All three ancestral powers converge in you</p>
+            </div>
+          </div>
+
+          <div class="subsection">
+            <h3>Generation III (1956-Present): The Cervantes Anchor</h3>
+            <p><strong>Hebrew:</strong> <span class="hebrew-text">צרוף (Tzruf)</span> - Refined through fire, purified foundation</p>
+            <div class="family-card">
+              <p><strong>Location:</strong> Barra de Navidad, Mexico (Portal of Guadalupe Connection)</p>
+              <p><strong>Power:</strong> American/Indigenous gateway, sacred connection to Mexican spiritual tradition</p>
+              <p><strong>Legacy:</strong> Mexican heritage blended with spiritual inheritance</p>
+            </div>
+          </div>
+
+          <div class="subsection">
+            <h3>Generation II: The Rutherford & Wyatt Lineage</h3>
+            <p><strong>Hebrew:</strong> <span class="hebrew-text">מושל (Moshal)</span> - Rulers, dominion, authority</p>
+            <div class="family-card">
+              <p><strong>Rutherford (Scotland):</strong> "Nec Sorte Nec Fato" - Divine Design, Not Chance</p>
+              <p><strong>Wyatt (England):</strong> Seafaring dominion, naval authority, Atlantic command</p>
+              <p><strong>Combined Power:</strong> Atlantic control, western authority, technological mastery</p>
+            </div>
+          </div>
+
+          <div class="subsection">
+            <h3>Generation I: Ancient Origins</h3>
+            <p><strong>Hebrew:</strong> <span class="hebrew-text">שרש (Shoresh)</span> - Root, origin, foundation</p>
+            <div class="family-card">
+              <p><strong>Greek/Mediterranean (Peleset Origin):</strong> 1175 BC - Witness of Crucifixion through lineage</p>
+              <p><strong>Atlantic/European:</strong> Millennia of dominion and authority</p>
+              <p><strong>Indigenous/American:</strong> Pre-conquest peoples and spiritual traditions</p>
+              <p><strong>Hebrew/Abrahamic:</strong> Covenant witness and redemptive inheritance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 6: Ancestral Powers -->
+      <div id="ancestral-powers-tab" style="display:none;">
+        <div class="section">
+          <h2 class="section-title">⭐ Four Ancestral Powers</h2>
+          
+          <div class="subsection">
+            <h3>🔱 Power 1: Greek/Mediterranean - The Crown Bearer (ΣΤΕΦΑΝΟΣ)</h3>
+            <p><strong>Hebrew:</strong> <span class="hebrew-text">כתר - Keter (Crown)</span> | <strong>Period:</strong> 1175 BC - 2025 AD</p>
+            <p><strong>Manifestation:</strong> You are the crowned witness. Like Greeks at Calvary, you testify to Christ's resurrection. Like Saint Stephen, you wear the crown of martyrdom-in-life.</p>
+          </div>
+
+          <div class="subsection">
+            <h3>🌎 Power 2: American/Indigenous - The Portal Gateway (CERVANTES)</h3>
+            <p><strong>Hebrew:</strong> <span class="hebrew-text">שער - Sha'ar (Gate)</span> | <strong>Period:</strong> Pre-Conquest - 2025 AD</p>
+            <p><strong>Manifestation:</strong> You are the messenger between cultures, traditions, and spiritual realms. Like the deer that crosses boundaries, you navigate between: European/American, Orthodox/Catholic/Protestant, Ancient/Modern, Secular/Sacred.</p>
+          </div>
+
+          <div class="subsection">
+            <h3>⚓ Power 3: Atlantic/Nuclear - The Dominion Anchor (WYATT-RUTHERFORD)</h3>
+            <p><strong>Hebrew:</strong> <span class="hebrew-text">יסוד - Yesod (Foundation)</span> | <strong>Period:</strong> Medieval - 2025 AD</p>
+            <p><strong>Manifestation:</strong> You have the authority and capability to implement vision. Your technical mastery (full-stack development, AI, 3D systems) is the modern expression of ancestral Atlantic command.</p>
+          </div>
+
+          <div class="subsection">
+            <h3>✡️ Power 4: Covenant/Redemptive - The Witness (SERVATUS)</h3>
+            <p><strong>Hebrew:</strong> <span class="hebrew-text">עדות - Edut (Testimony)</span> | <strong>Period:</strong> Eternal - 2025 AD</p>
+            <p><strong>Manifestation:</strong> You embody redemptive history. Every choice, word, and innovation becomes testimony to God's power to transform opposition into service.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 7: Roles 2025+ -->
+      <div id="roles-2025-tab" style="display:none;">
+        <div class="section">
+          <h2 class="section-title">🎯 Your 2025+ Roles: Rey-Capitán</h2>
+          
+          <div class="triple-crown">
+            <div class="crown-card">
+              <div class="crown-icon">👑</div>
+              <div class="crown-title">REY (King)</div>
+              <div class="crown-period">Spiritual Authority</div>
+              <div class="crown-description">
+                <strong>Hebrew: <span class="hebrew-text">מלך (Melech)</span></strong><br/>
+                Authority to lead, teach, and proclaim truth. Your kingdom is not of this world, but manifested through it. You reign by serving.
+              </div>
+            </div>
+
+            <div class="crown-card">
+              <div class="crown-icon">⚓</div>
+              <div class="crown-title">CAPITÁN (Captain)</div>
+              <div class="crown-period">Practical Leadership</div>
+              <div class="crown-description">
+                <strong>Hebrew: <span class="hebrew-text">קצין (Qatzin)</span></strong><br/>
+                Command of resources, teams, and systems. Technical mastery applied to kingdom purpose. You navigate and direct.
+              </div>
+            </div>
+
+            <div class="crown-card">
+              <div class="crown-icon">🕊️</div>
+              <div class="crown-title">TESTIGO (Witness)</div>
+              <div class="crown-period">Living Testimony</div>
+              <div class="crown-description">
+                <strong>Hebrew: <span class="hebrew-text">עד (Ed)</span></strong><br/>
+                Your entire life becomes proclamation. Every innovation, relationship, and decision declares God's redemptive power.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 8: Action Plan -->
+      <div id="action-plan-tab" style="display:none;">
+        <div class="section">
+          <h2 class="section-title">📋 Action Plan: 2025+ Implementation</h2>
+
+          <div class="subsection">
+            <h3>Phase 1: Documentation & Research (Jan-Mar 2025)</h3>
+            
+            <div class="action-item">
+              <h4>🔍 Deep Genealogical Research</h4>
+              <p><strong>Hebrew:</strong> <span class="hebrew-text">חפש את השרש (Chafas et ha-Shoresh)</span> - Search your roots</p>
+              <ul>
+                <li>Trace Wyatt-Rutherford lineage to medieval England/Scotland</li>
+                <li>Cervantes family history in Mexico - Guadalupe connection</li>
+                <li>Cross-reference with historical records of Greek diaspora</li>
+                <li>Document spiritual inheritance narratives from family</li>
+              </ul>
+            </div>
+
+            <div class="action-item">
+              <h4>📖 Prophetic Documentation</h4>
+              <p><strong>Hebrew:</strong> <span class="hebrew-text">כתוב את הנבואה (Ktov et ha-Nbuah)</span> - Write the prophecy</p>
+              <ul>
+                <li>Compile all prophecy materials into unified manuscript</li>
+                <li>Create Hebrew/English parallel translations</li>
+                <li>Develop visual timelines: 3,200 years from Peleset to Steven</li>
+                <li>Establish reference library with historical sources</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="subsection">
+            <h3>Phase 2: Platform Development (Apr-Aug 2025)</h3>
+            
+            <div class="action-item">
+              <h4>🌐 Digital Ministry Hub</h4>
+              <p><strong>Hebrew:</strong> <span class="hebrew-text">בנה את הבית הדיגיטלי (Bne et ha-Bait ha-Digital)</span> - Build the digital house</p>
+              <ul>
+                <li>Create central platform integrating all projects</li>
+                <li>FastInternetPro (infrastructure), wellness (body), education (mind), prophecy (spirit)</li>
+                <li>Develop 3D navigation system showing redemptive history</li>
+                <li>Build community portal for kingdom collaborators</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="subsection">
+            <h3>Phase 3: Coronation & Activation (Sept-Dec 2025)</h3>
+            
+            <div class="action-item">
+              <h4>👑 Christmas 2025 Coronation Event</h4>
+              <p><strong>Hebrew:</strong> <span class="hebrew-text">הכתרה (Ha-Ktarah)</span> - Coronation</p>
+              <ul>
+                <li>Formal ceremony integrating Christian, Hebrew, cultural traditions</li>
+                <li>Public proclamation of four ancestral powers and calling</li>
+                <li>Live streaming to global audience (digital inauguration)</li>
+                <li>Launch of all integrated platforms simultaneously</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 9: Prophecy Integration -->
+      <div id="prophecy-integration-tab" style="display:none;">
+        <div class="section">
+          <h2 class="section-title">🔗 Complete 3200-Year Timeline</h2>
+
+          <div class="timeline-item">
+            <div class="timeline-year"><strong>1175 BC</strong></div>
+            <div class="timeline-content">
+              <div class="timeline-event">🌊 Peleset Arrive in Canaan</div>
+              <div class="timeline-description">Greek warriors establish five cities. <strong>Hebrew:</strong> <span class="hebrew-text">פלשתים</span> (Plishtim). PHASE 1: Enemy Cycle Begins.</div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year"><strong>47 CE</strong></div>
+            <div class="timeline-content">
+              <div class="timeline-event">📜 Mary Magdalene → Gaul</div>
+              <div class="timeline-description">Sacred bloodline transfer. <strong>Hebrew:</strong> <span class="hebrew-text">סנג ריאל</span> (Sang Real - Holy Blood). PHASE 2: Witness Activation.</div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year"><strong>447 CE</strong></div>
+            <div class="timeline-content">
+              <div class="timeline-event">👑 Merovingian Dynasty</div>
+              <div class="timeline-description">Divine kingship established. Long-haired kings with mystical authority. <strong>Hebrew:</strong> <span class="hebrew-text">מלכות אלהית</span> (Malchut Elohit - Divine Kingdom).</div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year"><strong>1531 CE</strong></div>
+            <div class="timeline-content">
+              <div class="timeline-event">🕯️ Guadalupe Portal Opens</div>
+              <div class="timeline-description">Virgin of Guadalupe appears in Mexico with 46 stars. <strong>Hebrew:</strong> <span class="hebrew-text">שער</span> (Sha'ar - Gate). Americas becomes new witness portal.</div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year"><strong>2025 CE</strong></div>
+            <div class="timeline-content">
+              <div class="timeline-event">👑 STEVEN'S CORONATION</div>
+              <div class="timeline-description">Christmas 2025: Steven (Στέφανος - Crown) crowned Rey-Capitán. All four ancestral powers unified. <strong>Hebrew:</strong> <span class="hebrew-text">הכתרה השלמה</span> (Ha-Ktarah ha-Shlemah - Complete Coronation). PHASE 4: Witness becomes King.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 10: Proclamation & Invitation -->
+      <div id="proclamation-tab" style="display:none;">
+        <div class="section">
+          <h2 class="section-title" id="procTitle">📢 Royal Proclamation & Invitation</h2>
+
+          <div class="proclamation-banner">
+            <div class="crown-seal">👑✝️🌊</div>
+            <p class="proclamation-text" id="procText">
+              HEAR YE, HEAR YE! By Divine Authority and Ancestral Mandate
+            </p>
+          </div>
+
+          <div class="subsection">
+            <h3 id="procHeading">A Proclamation to All Peoples</h3>
+            <p id="procProclaim">
+              Steven Wyatt Rutherford Cervantes-Servatus III, bearing the triple crown of Greek witness, American portal, and Atlantic dominion, hereby proclaims his calling as Rey-Capitán—King, Captain, and Witness to the restoration of the Five Edens.
+            </p>
+
+            <div class="prophecy-box" id="procAuthority">
+              <strong>By what authority?</strong> By the ancient bloodline of Mary Magdalene and the Merovingian Dynasty. By the spiritual power of the Virgin of Guadalupe. By the covenant witness of three thousand years. By the resurrection authority of Christ Jesus, witnessed through generations of faithful testimony.
+            </div>
+          </div>
+
+          <div class="subsection">
+            <h3 id="invHeading">You Are Invited</h3>
+            <p id="invIntro">
+              If your heart resonates with the following, you are called to join the Rey-Capitán's council:
+            </p>
+
+            <div class="invitation-cards">
+              <div class="inv-card">
+                <div class="inv-emoji">🕊️</div>
+                <h4 id="inv1Title">Seekers of Divine Truth</h4>
+                <p id="inv1Desc">Those who see beyond institutional religion to the living covenant Christ established—especially through the feminine divine wisdom of Mary Magdalene.</p>
+              </div>
+
+              <div class="inv-card">
+                <div class="inv-emoji">🌍</div>
+                <h4 id="inv2Title">Bridge Builders</h4>
+                <p id="inv2Desc">Those called to unite cultures, traditions, and spiritual lineages. Latino, indigenous, European, Orthodox, Catholic, Protestant, secular—all are welcome.</p>
+              </div>
+
+              <div class="inv-card">
+                <div class="inv-emoji">⚡</div>
+                <h4 id="inv3Title">Kingdom Innovators</h4>
+                <p id="inv3Desc">Technologists, entrepreneurs, healers, educators—those who manifest spiritual vision through practical implementation: FastInternetPro, wellness platforms, educational systems, AI restoration.</p>
+              </div>
+
+              <div class="inv-card">
+                <div class="inv-emoji">🎯</div>
+                <h4 id="inv4Title">Redemptive Witnesses</h4>
+                <p id="inv4Desc">Those whose personal testimony embodies transformation: from brokenness to wholeness, from opposition to service, from judgment to grace.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="subsection">
+            <h3 id="commitHeading">Commitment Required</h3>
+            <p id="commitText">
+              This is not a passive following. The Rey-Capitán's council requires active participation:
+            </p>
+
+            <div class="commitment-list">
+              <div class="commit-item">
+                <span class="commit-emoji">💎</span>
+                <div class="commit-content">
+                  <strong id="commit1Label">Spiritual Grounding:</strong> <span id="commit1Text">Regular prayer, study, and alignment with divine authority—not religious obligation, but authentic connection.</span>
+                </div>
+              </div>
+
+              <div class="commit-item">
+                <span class="commit-emoji">🤝</span>
+                <div class="commit-content">
+                  <strong id="commit2Label">Community Engagement:</strong> <span id="commit2Text">Participate in weekly gatherings, councils, and collaborative projects. Your voice and skills matter.</span>
+                </div>
+              </div>
+
+              <div class="commit-item">
+                <span class="commit-emoji">🏗️</span>
+                <div class="commit-content">
+                  <strong id="commit3Label">Kingdom Building:</strong> <span id="commit3Text">Contribute to FastInternetPro (infrastructure), wellness initiatives, educational platforms, or prophetic documentation.</span>
+                </div>
+              </div>
+
+              <div class="commit-item">
+                <span class="commit-emoji">🌱</span>
+                <div class="commit-content">
+                  <strong id="commit4Label">Personal Transformation:</strong> <span id="commit4Text">Commit to your own healing and growth. The kingdom thrives when each member embodies wholeness.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="subsection">
+            <h3 id="contactHeading">How to Respond</h3>
+            <p id="contactText">If you sense this calling, reach out:</p>
+
+            <div class="contact-box">
+              <p><strong id="emailLabel">Email:</strong> <a href="mailto:steven@example.com">steven@familyprophecy.com</a></p>
+              <p><strong id="phoneLabel">Phone/WhatsApp:</strong> +1-XXX-XXX-XXXX</p>
+              <p><strong id="locationLabel">Primary Location:</strong> Manzanillo, Colima, Mexico | Expanding Globally 2025+</p>
+              <p id="meetingText">Weekly Councils begin January 2025. First meeting: Virtual (Zoom) to welcome all traditions and timezones.</p>
+            </div>
+          </div>
+
+          <div class="prophecy-box" id="finalWords">
+            <strong>Final Word:</strong> This is not about Steven as a person. This is about the fulfillment of a 3,200-year prophecy. Whether through him or through the movement that gathers around this calling, the Five Edens will be restored. The divine feminine will be honored. The broken will be made whole. The invitation is open. Your response is awaited.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>⚔️🛡️👑🏛️ FAMILY PROPHECY COMPLETE 👑🏛️🛡️⚔️</p>
+      <p>Steven Wyatt Rutherford Cervantes-Servatus III | Rey-Capitán</p>
+      <p style="margin-top: 12px;">Año de Nuestro Señor 2025 | Año del Jubileo Guadalupano</p>
+      <p style="margin-top: 12px;">🌊⚓📜✝️</p>
+    </footer>
+  </div>
+
+  <script>
+    // Translation database
+    const translations = {
+      en: {
+        overview: "Overview", ancient: "Codices", mary: "Mary Magdalene", blood: "Bloodline", family: "Family Tree",
+        powers: "Powers", roles: "Roles 2025+", action: "Action Plan", timeline: "Timeline",
+        mainTitle: "FAMILY PROPHECY COMPLETE", mainSubtitle: "Steven Wyatt Rutherford Cervantes-Servatus III",
+        mainTagline: "Rey-Capitán: King • Captain • Witness", footerText: "FAMILY PROPHECY COMPLETE"
+      },
+      es: {
+        overview: "Resumen", ancient: "Códices", mary: "María Magdalena", blood: "Linaje Real", family: "Árbol Familiar",
+        powers: "Poderes", roles: "Roles 2025+", action: "Plan de Acción", timeline: "Línea de Tiempo",
+        mainTitle: "PROFECÍA FAMILIAR COMPLETA", mainSubtitle: "Steven Wyatt Rutherford Cervantes-Servatus III",
+        mainTagline: "Rey-Capitán: Rey • Capitán • Testigo", footerText: "PROFECÍA FAMILIAR COMPLETA"
+      },
+      fr: {
+        overview: "Aperçu", ancient: "Codices", mary: "Marie-Madeleine", blood: "Lignée Royale", family: "Arbre Généalogique",
+        powers: "Pouvoirs", roles: "Rôles 2025+", action: "Plan d'Action", timeline: "Chronologie",
+        mainTitle: "PROPHÉTIE FAMILIALE COMPLÈTE", mainSubtitle: "Steven Wyatt Rutherford Cervantes-Servatus III",
+        mainTagline: "Rey-Capitán: Roi • Capitaine • Témoin", footerText: "PROPHÉTIE FAMILIALE COMPLÈTE"
+      },
+      ru: {
+        overview: "Обзор", ancient: "Кодексы", mary: "Мария Магдалина", blood: "Королевский Род", family: "Генеалогическое Древо",
+        powers: "Силы", roles: "Роли 2025+", action: "План Действий", timeline: "Временная Шкала",
+        mainTitle: "ПОЛНАЯ СЕМЕЙНАЯ ПРОРОЧЕСТВО", mainSubtitle: "Steven Wyatt Rutherford Cervantes-Servatus III",
+        mainTagline: "Rey-Capitán: Король • Капитан • Свидетель", footerText: "ПОЛНАЯ СЕМЕЙНАЯ ПРОРОЧЕСТВО"
+      },
+      zh: {
+        overview: "概述", ancient: "古代手稿", mary: "抹大拉的玛丽亚", blood: "皇家血统", family: "家族树",
+        powers: "力量", roles: "2025+角色", action: "行动计划", timeline: "时间表",
+        mainTitle: "家族预言完整版", mainSubtitle: "Steven Wyatt Rutherford Cervantes-Servatus III",
+        mainTagline: "Rey-Capitán: 国王·队长·见证人", footerText: "家族预言完整版"
+      },
+      ja: {
+        overview: "概要", ancient: "古代写本", mary: "マグダラのマリア", blood: "王家の血統", family: "家系図",
+        powers: "力", roles: "2025+の役割", action: "行動計画", timeline: "時系列",
+        mainTitle: "完全家族予言", mainSubtitle: "Steven Wyatt Rutherford Cervantes-Servatus III",
+        mainTagline: "Rey-Capitán: 王·船長·証人", footerText: "完全家族予言"
+      },
+      ar: {
+        overview: "نظرة عامة", ancient: "المخطوطات", mary: "مريم المجدلية", blood: "النسب الملكي", family: "شجرة العائلة",
+        powers: "القوى", roles: "الأدوار 2025+", action: "خطة العمل", timeline: "الخط الزمني",
+        mainTitle: "النبوة العائلية الكاملة", mainSubtitle: "Steven Wyatt Rutherford Cervantes-Servatus III",
+        mainTagline: "Rey-Capitán: ملك • قبطان • شاهد", footerText: "النبوة العائلية الكاملة"
+      },
+      pt: {
+        overview: "Visão Geral", ancient: "Códices", mary: "Maria Madalena", blood: "Linhagem Real", family: "Árvore Genealógica",
+        powers: "Poderes", roles: "Papéis 2025+", action: "Plano de Ação", timeline: "Linha do Tempo",
+        mainTitle: "PROFECIA FAMILIAR COMPLETA", mainSubtitle: "Steven Wyatt Rutherford Cervantes-Servatus III",
+        mainTagline: "Rey-Capitán: Rei • Capitão • Testemunha", footerText: "PROFECIA FAMILIAR COMPLETA"
+      },
+      de: {
+        overview: "Übersicht", ancient: "Kodizes", mary: "Maria Magdalena", blood: "Königliches Blut", family: "Stammbaum",
+        powers: "Kräfte", roles: "Rollen 2025+", action: "Aktionsplan", timeline: "Zeitstrahl",
+        mainTitle: "VOLLSTÄNDIGE FAMILIENPROPHEZEIHUNG", mainSubtitle: "Steven Wyatt Rutherford Cervantes-Servatus III",
+        mainTagline: "Rey-Capitán: König • Kapitän • Zeuge", footerText: "VOLLSTÄNDIGE FAMILIENPROPHEZEIHUNG"
+      },
+      it: {
+        overview: "Panoramica", ancient: "Codici", mary: "Maria Maddalena", blood: "Stirpe Reale", family: "Albero Genealogico",
+        powers: "Poteri", roles: "Ruoli 2025+", action: "Piano d'Azione", timeline: "Cronologia",
+        mainTitle: "PROFEZIA FAMILIARE COMPLETA", mainSubtitle: "Steven Wyatt Rutherford Cervantes-Servatus III",
+        mainTagline: "Rey-Capitán: Re • Capitano • Testimone", footerText: "PROFEZIA FAMILIARE COMPLETA"
+      },
+      el: {
+        overview: "Επισκόπηση", ancient: "Κώδικες", mary: "Μαρία Μαγδαληνή", blood: "Βασιλικό Αίμα", family: "Genealογικό Δέντρο",
+        powers: "Δυνάμεις", roles: "Ρόλοι 2025+", action: "Σχέδιο Δράσης", timeline: "Χρονοδιάγραμμα",
+        mainTitle: "ΠΛΗΡΗΣ ΟΙΚΟΓΕΝΕΙΑΚΗ ΠΡΟΦΗΤΕΙΑ", mainSubtitle: "Steven Wyatt Rutherford Cervantes-Servatus III",
+        mainTagline: "Rey-Capitán: Βασιλιάς • Καπετάνιος • Μάρτυρας", footerText: "ΠΛΗΡΗΣ ΟΙΚΟΓΕΝΕΙΑΚΗ ΠΡΟΦΗΤΕΙΑ"
+      },
+      he: {
+        overview: "סקירה", ancient: "כתבי קדם", mary: "מרים המגדלית", blood: "הווקת המלוכה", family: "עץ משפחה",
+        powers: "כוחות", roles: "תפקידים 2025+", action: "תוכנית פעולה", timeline: "ציר הזמן",
+        mainTitle: "נבואת המשפחה השלמה", mainSubtitle: "Steven Wyatt Rutherford Cervantes-Servatus III",
+        mainTagline: "Rey-Capitán: מלך • קפטן • עד", footerText: "נבואת המשפחה השלמה"
+      },
+      blackfoot: {
+        overview: "Istoyinniksi", ancient: "Kitapikoamaksi", mary: "Notksikaksi", blood: "Siksikaí Okataya", family: "Ámpai Kanai",
+        powers: "Ponokaí", roles: "Otakotsistuí 2025+", action: "Okaatáp Otókoyi", timeline: "Kitsikóko Otsiksuí",
+        mainTitle: "SÍKSIKAÍ NOTAPATSOKINIKSI", mainSubtitle: "Steven Wyatt Rutherford Cervantes-Servatus III",
+        mainTagline: "Rey-Capitán: Mató • Omaatáp • Ponítsiko", footerText: "SÍKSIKAÍ NOTAPATSOKINIKSKI"
+      },
+      nahuatl: {
+        overview: "Yancuic Tonacayotl", ancient: "Amoxtli", mary: "Margarita Noctli", blood: "Atl Royalti", family: "Nextlaohuayan",
+        powers: "Nextlauini", roles: "Tlapohualistli 2025+", action: "Necmitl Tlaohuayan", timeline: "Tonacatl Metztli",
+        mainTitle: "COMPLETO TONACAYOTL OMETOCHTLI", mainSubtitle: "Steven Wyatt Rutherford Cervantes-Servatus III",
+        mainTagline: "Rey-Capitán: Tlahtohc • Amoxohua • Nextlauini", footerText: "COMPLETO TONACAYOTL"
+      },
+      korean: {
+        overview: "개요", ancient: "고대 문헌", mary: "막달라 마리아", blood: "왕족 혈통", family: "가족계도",
+        powers: "힘", roles: "2025+역할", action: "행동계획", timeline: "시간표",
+        mainTitle: "완전한 가족 예언", mainSubtitle: "Steven Wyatt Rutherford Cervantes-Servatus III",
+        mainTagline: "Rey-Capitán: 왕 • 선장 • 증인", footerText: "완전한 가족 예언"
+      },
+      swahili: {
+        overview: "Muhtasari", ancient: "Maandishi ya Kale", mary: "Maria Magdalena", blood: "Nchi ya Kifalme", family: "Mti wa Jamii",
+        powers: "Nguvu", roles: "Majukumu 2025+", action: "Mpango wa Kitendo", timeline: "Ratiba ya Wakati", proclamation: "Tangazo na Kamatanisha",
+        mainTitle: "UNABII WA JAMII WA KAMILI", mainSubtitle: "Steven Wyatt Rutherford Cervantes-Servatus III",
+        mainTagline: "Rey-Capitán: Mfalme • Nahodha • Shahidi", footerText: "UNABII WA JAMII WA KAMILI"
+      },
+      proclamationContent: {
+        en: {
+          procTitle: "📢 Royal Proclamation & Invitation",
+          procText: "HEAR YE, HEAR YE! By Divine Authority and Ancestral Mandate",
+          procHeading: "A Proclamation to All Peoples",
+          procProclaim: "Steven Wyatt Rutherford Cervantes-Servatus III, bearing the triple crown of Greek witness, American portal, and Atlantic dominion, hereby proclaims his calling as Rey-Capitán—King, Captain, and Witness to the restoration of the Five Edens.",
+          procAuthority: "By what authority? By the ancient bloodline of Mary Magdalene and the Merovingian Dynasty. By the spiritual power of the Virgin of Guadalupe. By the covenant witness of three thousand years. By the resurrection authority of Christ Jesus, witnessed through generations of faithful testimony.",
+          invHeading: "You Are Invited",
+          invIntro: "If your heart resonates with the following, you are called to join the Rey-Capitán's council:",
+          inv1Title: "Seekers of Divine Truth", inv1Desc: "Those who see beyond institutional religion to the living covenant Christ established—especially through the feminine divine wisdom of Mary Magdalene.",
+          inv2Title: "Bridge Builders", inv2Desc: "Those called to unite cultures, traditions, and spiritual lineages. Latino, indigenous, European, Orthodox, Catholic, Protestant, secular—all are welcome.",
+          inv3Title: "Kingdom Innovators", inv3Desc: "Technologists, entrepreneurs, healers, educators—those who manifest spiritual vision through practical implementation.",
+          inv4Title: "Redemptive Witnesses", inv4Desc: "Those whose personal testimony embodies transformation: from brokenness to wholeness, from opposition to service, from judgment to grace.",
+          commitHeading: "Commitment Required", commitText: "This is not a passive following. The Rey-Capitán's council requires active participation:",
+          commit1Label: "Spiritual Grounding", commit1Text: "Regular prayer, study, and alignment with divine authority—not religious obligation, but authentic connection.",
+          commit2Label: "Community Engagement", commit2Text: "Participate in weekly gatherings, councils, and collaborative projects. Your voice and skills matter.",
+          commit3Label: "Kingdom Building", commit3Text: "Contribute to FastInternetPro (infrastructure), wellness initiatives, educational platforms, or prophetic documentation.",
+          commit4Label: "Personal Transformation", commit4Text: "Commit to your own healing and growth. The kingdom thrives when each member embodies wholeness.",
+          contactHeading: "How to Respond", contactText: "If you sense this calling, reach out:",
+          emailLabel: "Email", phoneLabel: "Phone/WhatsApp", locationLabel: "Primary Location", 
+          meetingText: "Weekly Councils begin January 2025. First meeting: Virtual (Zoom) to welcome all traditions and timezones.",
+          finalWords: "Final Word: This is not about Steven as a person. This is about the fulfillment of a 3,200-year prophecy. Whether through him or through the movement that gathers around this calling, the Five Edens will be restored. The divine feminine will be honored. The broken will be made whole. The invitation is open."
+        },
+        es: {
+          procTitle: "📢 Proclamación Real e Invitación",
+          procText: "¡OÍDLO BIEN! Por Autoridad Divina y Mandato Ancestral",
+          procHeading: "Una Proclamación a Todos los Pueblos",
+          procProclaim: "Steven Wyatt Rutherford Cervantes-Servatus III, portando la triple corona de testigo griego, portal americano y dominio atlántico, por este medio proclama su llamado como Rey-Capitán.",
+          procAuthority: "¿Por qué autoridad? Por la antigua sangre de María Magdalena y la Dinastía Merovingia. Por el poder espiritual de la Virgen de Guadalupe. Por el testimonio del pacto de tres mil años.",
+          invHeading: "Estás Invitado", invIntro: "Si tu corazón resuena con lo siguiente, eres llamado a unirse al consejo del Rey-Capitán:",
+          inv1Title: "Buscadores de Verdad Divina", inv1Desc: "Aquellos que ven más allá de la religión institucional.",
+          inv2Title: "Constructores de Puentes", inv2Desc: "Aquellos llamados a unir culturas, tradiciones y linajes espirituales.",
+          inv3Title: "Innovadores del Reino", inv3Desc: "Tecnólogos, empresarios, sanadores, educadores—aquellos que manifiestan visión espiritual.",
+          inv4Title: "Testigos Redentores", inv4Desc: "Aquellos cuyo testimonio personal encarna transformación.",
+          commitHeading: "Compromiso Requerido", commitText: "No es un seguimiento pasivo. El consejo del Rey-Capitán requiere participación activa:",
+          commit1Label: "Fundamento Espiritual", commit1Text: "Oración regular, estudio y alineación con autoridad divina.",
+          commit2Label: "Compromiso Comunitario", commit2Text: "Participar en reuniones semanales, consejos y proyectos colaborativos.",
+          commit3Label: "Construcción del Reino", commit3Text: "Contribuir a FastInternetPro, iniciativas de bienestar, plataformas educativas.",
+          commit4Label: "Transformación Personal", commit4Text: "Comprométete con tu propia sanación y crecimiento.",
+          contactHeading: "Cómo Responder", contactText: "Si sientes este llamado, ponte en contacto:",
+          emailLabel: "Correo", phoneLabel: "Teléfono/WhatsApp", locationLabel: "Ubicación Principal", 
+          meetingText: "Los Consejos Semanales comienzan en enero de 2025. Primera reunión: Virtual (Zoom) para acoger todas las tradiciones y zonas horarias.",
+          finalWords: "Palabra Final: Esto no se trata de Steven como persona. Se trata del cumplimiento de una profecía de 3,200 años."
+        }
+      }
+    };
+
+    let currentLang = 'en';
+
+    // Tab functionality
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabs = document.querySelectorAll('[id$="-tab"]');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tabName = btn.dataset.tab;
+        tabs.forEach(tab => tab.style.display = 'none');
+        tabBtns.forEach(b => b.classList.remove('active'));
+        const selectedTab = document.getElementById(tabName + '-tab');
+        if (selectedTab) {
+          selectedTab.style.display = 'block';
+          btn.classList.add('active');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Language selector
+    document.getElementById('langSelect').addEventListener('change', (e) => {
+      currentLang = e.target.value;
+      updateLanguage();
+    });
+
+    function updateLanguage() {
+      const trans = translations[currentLang];
+      if (!trans) return;
+
+      // Update tab buttons
+      const tabMap = {
+        'overview': 'overview',
+        'ancient-codices': 'ancient',
+        'mary-magdalene': 'mary',
+        'royal-bloodline': 'blood',
+        'family-tree': 'family',
+        'ancestral-powers': 'powers',
+        'roles-2025': 'roles',
+        'action-plan': 'action',
+        'prophecy-integration': 'timeline',
+        'proclamation': 'proclamation'
+      };
+
+      tabBtns.forEach(btn => {
+        const tabKey = btn.dataset.tab;
+        const translationKey = tabMap[tabKey];
+        if (trans[translationKey]) {
+          const emoji = btn.textContent.split(' ')[0];
+          btn.textContent = emoji + ' ' + trans[translationKey];
+        }
+      });
+
+      // Update header text
+      document.getElementById('mainTitle').textContent = trans.mainTitle;
+      document.getElementById('mainSubtitle').textContent = trans.mainSubtitle;
+      document.getElementById('mainTagline').textContent = trans.mainTagline;
+    }
+  </script>
+</body>
+</html>
